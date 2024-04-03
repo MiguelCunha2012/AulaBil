@@ -16,13 +16,13 @@ while ($continua) {
         $i++;
     }
     if ($i >= $maximo || !$continua) {
-        $continua = false;
+        break;
     }
 }
 
 if ($i > 0) {
     $media = $adiciona / $i;
-    echo "A média dos números positivos é: $media\n";
+    echo "A média dos números positivos é: $media" . PHP_EOL;
 } else {
-    echo "Nenhum número positivo foi inserido.\n";
+    echo "Nenhum número positivo foi inserido." . PHP_EOL;
 }
